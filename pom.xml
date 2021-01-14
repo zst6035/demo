@@ -164,7 +164,7 @@
                 <version>1.1.1</version>
                 <executions>
                     <execution>
-                        <phase>test</phase>
+                        <phase>compile</phase>
                         <goals>
                             <goal>java</goal>
                         </goals>
@@ -175,6 +175,7 @@
                                 <argument>11</argument>
                                 <argument>22</argument>
                             </arguments>
+                            <classpathScope>compile</classpathScope>
                         </configuration>
                     </execution>
                 </executions>
