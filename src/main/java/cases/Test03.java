@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Test03 {
 
-    @Test(dataProvider = "dateprovider1",testName = "测试名字")
+    @Test(dataProvider = "dateprovider1",testName = "测试名字",description = "测试描述")
     public void test01(String name,int age,String grade){
 
        // System.out.println(name+age);
