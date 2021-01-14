@@ -133,7 +133,8 @@ public static  String getResponse(String url,String body)throws IOException{
 public static File orderByDate() throws Exception{
     //获取文件夹路径
     File file = new File("");
-    String filePath=file.getCanonicalPath()+"\\test-output";
+
+    String filePath=file.getCanonicalPath().concat(File.separatorChar+"").concat("test-output");
     System.out.println("=============="+filePath);
     File file1=new File(filePath);
     File[] files=file1.listFiles();
