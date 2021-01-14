@@ -3,14 +3,14 @@
 <suite name="TestSuite">
     <test name="ehr_test">
         <!--此处可以是包，也是直接是test类，包的话路径不能到类名-->
-        <packages>
-            <package name ="cases" />
-   </packages>
-        <!--<classes>-->
-            <!--&lt;!&ndash;协议支付&ndash;&gt;-->
-            <!--<class name="cases.Test01"></class>-->
-            <!--&lt;!&ndash;<class name="com.huishouqian.test.Test02"></class>&ndash;&gt;-->
-        <!--</classes>-->
+        <!--<packages>-->
+            <!--<package name ="cases" />-->
+   <!--</packages>-->
+        <classes>
+
+            <class name="cases.Test03"></class>
+            <!--<class name="com.huishouqian.test.Test02"></class>-->
+        </classes>
     </test>
     <listeners>
         <listener class-name="config.ExtentTestNGIReporterListener" />
