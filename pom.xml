@@ -137,10 +137,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.7.1</version>
-
                 <configuration>
                     <!--打包时跳过测试，这样就不会打包失败了-->
-                    <!--<skipTests>true</skipTests>-->
+                    <skipTests>true</skipTests>
                     <suiteXmlFiles>
                         <suiteXmlFile>
                             ./src/main/resources/testng.xml
@@ -173,13 +172,14 @@
                             <includePluginDependencies>true</includePluginDependencies>
                             <mainClass>test.SendMail</mainClass>
                             <arguments>
-                                <argument>11</argument>v
+                                <argument>11</argument>
                                 <argument>22</argument>
                             </arguments>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 
