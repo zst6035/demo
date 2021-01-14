@@ -133,7 +133,8 @@ public static  String getResponse(String url,String body)throws IOException{
 public static File orderByDate() throws Exception{
     //获取文件夹路径
     File file = new File("");
-
+    //非常重要，在windows中和linux中是路径是不一样的；一个是/,一个是\
+    //所以使用File.separatorChar来获取
     String filePath=file.getCanonicalPath().concat(File.separatorChar+"").concat("test-output");
     System.out.println("=============="+filePath);
     File file1=new File(filePath);
