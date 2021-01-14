@@ -134,7 +134,7 @@ public static File orderByDate() throws Exception{
     //获取文件夹路径
     File file = new File("");
     String filePath=file.getCanonicalPath()+"\\test-output";
-
+    System.out.println("=============="+filePath);
     File file1=new File(filePath);
     File[] files=file1.listFiles();
     Arrays.sort(files, new Comparator<File>() {
